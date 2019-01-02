@@ -1,0 +1,268 @@
+html {
+  font-family: 'Oxygen', serif;
+  color: #303030;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: radial-gradient( circle 919px at 1% 2.6%,  rgba(215,240,213,1) 0%, rgba(244,245,216,1) 90% );
+  background-image: url("4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+}
+
+.intro{
+  position: relative;
+  top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.intro-container{
+  display: block;
+  background: rgb(248,248,248);
+  background: linear-gradient(90deg, rgba(248,248,248,0.5) 0%, rgba(248,248,248,0.8) 50%, rgba(248,248,248,0.5) 100%);  border-style: solid;
+  border-top-width: thin;
+  border-bottom-width: thin;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: rgba(48, 48, 48, 0.5);
+}
+
+
+.name-text{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: auto;
+  width: 50%;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: rgba(48, 48, 48, 0.5);
+  letter-spacing: 1px;
+}
+
+.intro-name{
+  font-size: 4vh;
+}
+
+.description-text{
+  font-size: 2vh;
+}
+
+.menu{
+  position: -webkit-mos-sticky;
+  position: sticky;
+  top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 2vh;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.menu-about, .menu-timeline, .menu-projects, .menu-contact{
+  background-color: rgb(248,248,248,0.8);
+  border-width: thin;
+  border-style: solid;
+  border-color: rgba(48, 48, 48, 0.5);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 5px;
+}
+
+
+a:link{
+  text-decoration: none;
+  color: #303030;
+}
+
+a:hover{
+  color: #F8F8F8;
+  background-color: rgb(48,48,48);
+}
+
+.about-me-section{
+  padding-bottom: 20vh;
+  display: block;
+  position: relative;
+  z-index: -1;
+  top: 50vh;
+  margin: auto;
+  border-width: thin;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: rgba(48, 48, 48, 0.5);
+  background: rgb(248,248,248);
+  background: linear-gradient(180deg, rgba(248,248,248,0.8155637254901961) 0%, rgba(248,248,248,1) 17%);
+}
+
+.section-title, .section-title-timeline{
+  position: relative;
+  top: 1vh;
+  margin: auto;
+  text-align: center;
+  padding: 2vh;
+}
+
+.title, .title-timeline{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: auto;
+  width: 30%;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: rgba(48, 48, 48, 0.5);
+  font-size: 4vh;
+  letter-spacing: 1px;
+}
+
+.about-me-content{
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 40%;
+  letter-spacing: 0.5px;
+}
+
+.about-me-content-description, .timeline-content-description{
+  font-size: 3vh;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.about-me-content-text, .skills-text{
+  font-size: 2vh;
+  padding-bottom: 20px;
+  word-spacing: 2px;
+}
+
+.about-me-content-text{
+  text-indent: 10%;
+  line-height: 1.6;
+}
+
+
+.timeline-section{
+  display: block;
+  position: relative;
+  top: 50vh;
+  height: 150vh;
+  z-index: -1;
+  background: rgba(48, 48, 48, 0.7);
+  margin: auto;
+}
+
+
+.title-timeline{
+  border-color:  rgb(248,248,248);
+  color: rgb(248,248,248);
+}
+
+.timeline-content{
+  position: relative;
+}
+
+.timeline-content-description{
+  color: rgb(248,248,248);
+}
+
+.timeline-element, .timeline-image, .date{
+  border-style: solid;
+  border-color: rgba(48, 48, 48, 0.5);
+  border-width: thin;
+  border-radius: 5px;
+}
+
+.timeline-element{
+  position: absolute;
+  left: 25%;
+  right: 20%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(248,248,248, 0.9);
+}
+.element1{
+  top: 100px;
+}
+.element2{
+  top: 450px;
+}
+.element3{
+  top: 800px;
+}
+
+.image-date-container{
+  position: relative;
+  flex: 1;
+}
+
+
+.timeline-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.date-container{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.date{
+  padding: 10px;
+  font-size: 1vw;
+  font-weight: bold;
+  background-color: rgb(248,248,248,0.7);
+}
+
+.timeline-element:hover .date-container {
+  opacity: 1;
+}
+
+.element-description{
+  flex: 3;
+}
+
+.period1, .period2, .period3{
+  position: absolute;
+  left: 10%;
+  color: rgb(248,248,248);
+  font-size: 40px;
+  text-align: center;
+}
+
+.period1{
+  top: 125px;
+}
+.period2{
+  top: 475px;
+}
+.period3{
+  top: 825px;
+}
