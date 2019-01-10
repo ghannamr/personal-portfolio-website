@@ -9,6 +9,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -119,7 +120,7 @@ body {
   background: linear-gradient(180deg, rgba(248,248,248,0.8155637254901961) 0%, rgba(248,248,248,1) 17%);
 }
 
-.section-title, .section-title-timeline{
+.section-title, .section-title-timeline, .section-title-under-construction{ /*edit this*/
   position: relative;
   top: 1vh;
   margin: auto;
@@ -127,7 +128,7 @@ body {
   padding: 2vh;
 }
 
-.title, .title-timeline{
+.title, .title-timeline, .title-under-construction{ /*edit this*/
   padding-bottom: 20px;
   padding-top: 20px;
   margin: auto;
@@ -147,7 +148,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.about-me-content-description, .timeline-content-description, .timeline-element-description{
+.about-me-content-description, .timeline-content-description, .timeline-element-description, .under-construction-content-description{ /*edit this*/
   font-size: 3vh;
   padding-top: 10px;
   text-align: center;
@@ -218,6 +219,7 @@ body {
 
 .element-link:link{
   color: #303030;
+  letter-spacing: 2px;
 }
 
 .element-link:visited{
@@ -225,9 +227,6 @@ body {
   color: #303030;
 }
 
-.element-link:hover{
-  font-size: 3.1vh;
-}
 
 .timeline-element-description{
   text-align: left;
@@ -294,4 +293,74 @@ body {
 }
 .period3{
   top: 104vh;
+}
+
+/* Temporary */
+
+.under-construction-section{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: block;
+  position: relative;
+  margin: auto;
+  border-width: thick;
+  border-top-style: dashed;
+  border-bottom-style: solid;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: rgba(48, 48, 48);
+  background: rgb(248,248,248);
+  color: rgba(48, 48, 48);
+}
+
+.title-under-construction{
+  width: 50%;
+  border-bottom-style: none;
+}
+
+.under-construction-content-description{
+  color: rgba(48, 48, 48);
+}
+
+.icon-div{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+}
+
+.icon{
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+.under-construction-links{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mail, .github, .linkedin{
+  padding: 30px;
+  z-index: 500;
+}
+
+.construction-link:link{
+  text-decoration: none;
+  color: #303030;
+}
+
+.construction-link:visited{
+  text-decoration: none;
+  color: #303030;
+}
+
+footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  background-color: #303030;
+  text-align: center;
+  color: rgb(248,248,248);
 }
