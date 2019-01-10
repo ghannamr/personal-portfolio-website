@@ -70,6 +70,7 @@ body {
   font-size: 2vh;
   letter-spacing: 1px;
   text-align: center;
+  z-index: 4;
 }
 
 .menu-about, .menu-timeline, .menu-projects, .menu-contact{
@@ -85,18 +86,24 @@ body {
 }
 
 
-a:link{
+.menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link{
   text-decoration: none;
   color: #303030;
 }
 
-a:hover{
+.menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited{
+  text-decoration: none;
+  color: #303030;
+}
+
+.menu-about:hover, .menu-timeline:hover, .menu-projects:hover, .menu-contact:hover{
   color: #F8F8F8;
   background-color: rgb(48,48,48);
 }
 
 .about-me-section{
   padding-bottom: 20vh;
+  padding-top: 10vh;
   display: block;
   position: relative;
   z-index: -1;
@@ -140,7 +147,7 @@ a:hover{
   letter-spacing: 0.5px;
 }
 
-.about-me-content-description, .timeline-content-description{
+.about-me-content-description, .timeline-content-description, .timeline-element-description{
   font-size: 3vh;
   padding-top: 10px;
   text-align: center;
@@ -160,12 +167,12 @@ a:hover{
 
 .timeline-section{
   display: block;
-  position: relative;
-  top: 50vh;
-  height: 150vh;
+  position: static;
+  margin-top: 50vh;
+  height: 180vh;
+  padding-top: 10vh;
   z-index: -1;
   background: rgba(48, 48, 48, 0.7);
-  margin: auto;
 }
 
 
@@ -200,13 +207,35 @@ a:hover{
   background-color: rgb(248,248,248, 0.9);
 }
 .element1{
-  top: 100px;
+  top: 20vh;
 }
 .element2{
-  top: 450px;
+  top: 60vh;
 }
 .element3{
-  top: 800px;
+  top: 100vh;
+}
+
+.element-link:link{
+  color: #303030;
+}
+
+.element-link:visited{
+  text-decoration: none;
+  color: #303030;
+}
+
+.element-link:hover{
+  font-size: 3.1vh;
+}
+
+.timeline-element-description{
+  text-align: left;
+}
+
+.location{
+  font-size: 2vh;
+  color: rgb(105,105,105);
 }
 
 .image-date-container{
@@ -251,18 +280,18 @@ a:hover{
 
 .period1, .period2, .period3{
   position: absolute;
-  left: 10%;
+  left: 12%;
   color: rgb(248,248,248);
-  font-size: 40px;
+  font-size: 4vh;
   text-align: center;
 }
 
 .period1{
-  top: 125px;
+  top: 24vh;
 }
 .period2{
-  top: 475px;
+  top: 64vh;
 }
 .period3{
-  top: 825px;
+  top: 104vh;
 }
