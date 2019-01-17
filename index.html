@@ -8,6 +8,7 @@
  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href="css/stylesheet.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <!-- Intro -->
@@ -23,10 +24,18 @@
   </div>
   <!-- Menu -->
   <div class="menu">
-    <a class="menu-about" href="#AboutMe">About Me</a>
-    <a class="menu-timeline" href="#Timeline">Timeline</a>
-    <a class="menu-projects" href="#Projects">Projects</a>
-    <a class="menu-contact" href="#Contact">Contact</a>
+    <div class="menu-about-div">
+        <a class="menu-about" href="#AboutMe">About Me</a>
+    </div>
+    <div class="menu-timeline-div">
+        <a class="menu-timeline" href="#Timeline">Timeline</a>
+    </div>
+    <div class="menu-projects-div">
+        <a class="menu-projects" href="#Projects">Projects</a>
+    </div>
+    <div class="menu-contact-div">
+        <a class="menu-contact" href="#Contact">Contact</a>
+    </div>
   </div>
   <!-- About Me -->
   <div class="about-me-section" id="AboutMe">
@@ -159,7 +168,7 @@
       </i>
     </div>
     <p class="under-construction-content-description">
-        The website is still under construction, but you can still view my projects
+        The website is under construction, but you can still view my projects
         and contact me using the links below!
     </p>
     <div class="under-construction-links">
@@ -184,4 +193,6 @@
     <p class="footer-text">Copyright &copy Ralph Ghannam 2019</p>
   </footer>
 </body>
+
+<script src="javascript/javascript.js"></script>
 </html>

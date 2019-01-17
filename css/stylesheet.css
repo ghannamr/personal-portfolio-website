@@ -62,16 +62,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40vh;
-  width: 40vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 5px;
   font-weight: bold;
   font-size: 2vh;
   letter-spacing: 1px;
   text-align: center;
   z-index: 4;
+}
+
+.menu-about-div, .menu-timeline-div, .menu-projects-div, .menu-contact-div{
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .menu-about, .menu-timeline, .menu-projects, .menu-contact{
@@ -90,11 +94,13 @@ body {
 .menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link{
   text-decoration: none;
   color: #303030;
+  background-color: rgb(248,248,248,0.8);
 }
 
 .menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited{
   text-decoration: none;
   color: #303030;
+  background-color: rgb(248,248,248,0.8);
 }
 
 .menu-about:hover, .menu-timeline:hover, .menu-projects:hover, .menu-contact:hover{
@@ -363,4 +369,107 @@ footer{
   background-color: #303030;
   text-align: center;
   color: rgb(248,248,248);
+}
+
+/* For mobile */
+
+@media only screen and (max-width: 800px) {
+
+    .name-text{
+      width: 80%;
+    }
+    .menu{
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      border-width: thin;
+      border-bottom-style: solid;
+      border-top-style: solid;
+      border-color: rgba(48, 48, 48, 0.8);
+      border-radius: 0;
+      font-size: 2.5vw;
+      background-color: rgb(248,248,248,0.8);
+    }
+    .menu-about-div, .menu-timeline-div, .menu-projects-div, .menu-contact-div{
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+        border-width: thin;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-color: rgba(48, 48, 48, 0.5);
+    }
+
+    .menu-about, .menu-timeline, .menu-projects, .menu-contact{
+      border-style: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link{
+      background-color: transparent;
+    }
+
+    .menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited{
+      background-color: transparent;
+    }
+
+    .menu-about:hover, .menu-timeline:hover, .menu-projects:hover, .menu-contact:hover{
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .about-me-content{
+      width: 80%;
+    }
+
+    .timeline-section{
+      height: 250vh;
+    }
+
+    .timeline-element{
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      padding: 20px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: rgb(248,248,248, 0.9);
+    }
+    .element1{
+      top: 10vh;
+    }
+    .element2{
+      top: 70vh;
+    }
+    .element3{
+      top: 135vh;
+    }
+
+    .timeline-image{
+      width: 30%;
+      float: left;
+    }
+
+    .period1, .period2, .period3{
+      left: 60vw;
+      color: rgb(248,248,248, 0.9);
+      background-color: rgba(48, 48, 48);
+      font-size: 4vw;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      border-radius: 2vw;
+    }
+    .period1{
+      top: 12vh;
+    }
+    .period2{
+      top: 72vh;
+    }
+    .period3{
+      top: 138vh;
+    }
+
+
+
 }
