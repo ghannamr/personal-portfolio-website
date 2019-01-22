@@ -5,7 +5,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-image: radial-gradient( circle 919px at 1% 2.6%,  rgba(215,240,213,1) 0%, rgba(244,245,216,1) 90% );
-  background-image: url("4.jpg");
+  /*background-image: url("4.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -126,7 +126,7 @@ body {
   background: linear-gradient(180deg, rgba(248,248,248,0.8155637254901961) 0%, rgba(248,248,248,1) 17%);
 }
 
-.section-title, .section-title-timeline, .section-title-under-construction{ /*edit this*/
+.section-title, .title-projects, .section-title-timeline, .section-title-projects, .section-title-under-construction{ /*edit this*/
   position: relative;
   top: 1vh;
   margin: auto;
@@ -134,7 +134,7 @@ body {
   padding: 2vh;
 }
 
-.title, .title-timeline, .title-under-construction{ /*edit this*/
+.title, .title-timeline, .title-projects, .title-under-construction{ /*edit this*/
   padding-bottom: 20px;
   padding-top: 20px;
   margin: auto;
@@ -154,7 +154,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.about-me-content-description, .timeline-content-description, .timeline-element-description, .under-construction-content-description{ /*edit this*/
+.about-me-content-description, .timeline-content-description, .timeline-element-description, .projects-content-description, .under-construction-content-description{ /*edit this*/
   font-size: 3vh;
   padding-top: 10px;
   text-align: center;
@@ -301,6 +301,99 @@ body {
   top: 104vh;
 }
 
+.projects-section{
+    border-top-width: thin;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-color: rgba(48, 48, 48, 0.8);
+    background: rgba(248,248,248,0.1);
+}
+
+.projects-content-sub-description{
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 5vh;
+}
+
+.big-projects{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.project{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(48,48,48,0.7);
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+.project-image{
+    width: 400px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-color: rgb(48,48,48);
+}
+
+.project-description{
+    font-size: 2vh;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.project-link:link{
+    background-color: rgba(248,248,248,0.4);
+    text-decoration: none;
+    color: #303030;
+}
+
+.project-link:visited{
+    background-color: rgba(248,248,248,0.4);
+    text-decoration: none;
+    color: #303030;
+}
+
+.project-link:hover .project{
+    border-color: rgb(48,48,48);
+    border-radius: 8px;
+}
+
+.coming-soon{
+    background-color: rgba(248,248,248,0.4);
+    width: 400px;
+}
+
+.coming-soon-description{
+    font-size: 3vh;
+    position: relative;
+    top: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Temporary */
 
 .under-construction-section{
@@ -371,6 +464,7 @@ footer{
   color: rgb(248,248,248);
 }
 
+
 /* For mobile */
 
 @media only screen and (max-width: 800px) {
@@ -396,6 +490,15 @@ footer{
         border-left-style: solid;
         border-right-style: solid;
         border-color: rgba(48, 48, 48, 0.5);
+    }
+
+    .menu-about-div{
+        border-left-style: none;
+    }
+
+    .menu-contact-div{
+        border-right-style: none;
+        padding-right: 5vw;
     }
 
     .menu-about, .menu-timeline, .menu-projects, .menu-contact{
@@ -469,6 +572,39 @@ footer{
     .period3{
       top: 138vh;
     }
+
+
+    .big-projects{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects-mobile-fix{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project{
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(48,48,48,0.7);
+        border-radius: 8px;
+        letter-spacing: 1px;
+        width: 300px;
+    }
+
+    .project-image{
+        width: 300px;
+    }
+
+    .coming-soon{
+        background-color: rgba(248,248,248,0.4);
+        height: 240px;
+    }
+
 
 
 
