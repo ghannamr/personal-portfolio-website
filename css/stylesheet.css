@@ -58,7 +58,7 @@ body {
 .menu{
   position: -webkit-mos-sticky;
   position: sticky;
-  top: 2vh;
+  top: 5vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40vh;
@@ -146,7 +146,7 @@ body {
   letter-spacing: 1px;
 }
 
-.about-me-content{
+.about-me-content, .small-projects{
   margin: auto;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -160,13 +160,13 @@ body {
   text-align: center;
 }
 
-.about-me-content-text, .skills-text{
+.about-me-content-text, .skills-text, .small-projects-content-text{
   font-size: 2vh;
   padding-bottom: 20px;
   word-spacing: 2px;
 }
 
-.about-me-content-text{
+.about-me-content-text, .small-projects-content-text{
   text-indent: 10%;
   line-height: 1.6;
 }
@@ -302,6 +302,8 @@ body {
 }
 
 .projects-section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     border-top-width: thin;
     border-top-style: solid;
     border-bottom-style: solid;
@@ -361,6 +363,7 @@ body {
 }
 
 .project-link:hover .project{
+    background-color: rgba(248,248,248,0.8);
     border-color: rgb(48,48,48);
     border-radius: 8px;
 }
@@ -376,6 +379,38 @@ body {
     top: 30%;
 }
 
+.smaller-projects-link:link{
+    text-decoration: none;
+    color: rgb(80,80,80);
+    font-weight: bolder;
+}
+
+.smaller-projects-link:visited{
+    text-decoration: none;
+    color: rgb(48,48,48);
+}
+
+.smaller-projects-link:hover{
+    text-decoration: underline;
+    color: rgb(48,48,48);
+}
+
+.github-icon-div{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.github-link:link{
+    text-decoration: none;
+    color: #303030;
+}
+
+
+.github-link:visited{
+    text-decoration: none;
+    color: #303030;
+}
 
 
 
@@ -520,7 +555,7 @@ footer{
       color: inherit;
     }
 
-    .about-me-content{
+    .about-me-content, .small-projects{
       width: 80%;
     }
 
