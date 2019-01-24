@@ -126,7 +126,7 @@ body {
   background: linear-gradient(180deg, rgba(248,248,248,0.8155637254901961) 0%, rgba(248,248,248,1) 17%);
 }
 
-.section-title, .title-projects, .section-title-timeline, .section-title-projects, .section-title-under-construction{ /*edit this*/
+.section-title, .section-title-contact, .title-contact, .title-projects, .section-title-timeline, .section-title-projects, .section-title-under-construction{ /*edit this*/
   position: relative;
   top: 1vh;
   margin: auto;
@@ -134,7 +134,7 @@ body {
   padding: 2vh;
 }
 
-.title, .title-timeline, .title-projects, .title-under-construction{ /*edit this*/
+.title, .title-timeline, .title-projects, .title-contact, .title-under-construction{ /*edit this*/
   padding-bottom: 20px;
   padding-top: 20px;
   margin: auto;
@@ -305,6 +305,7 @@ body {
     padding-top: 10vh;
     padding-bottom: 10vh;
     border-top-width: thin;
+    border-bottom-width: thin;
     border-top-style: solid;
     border-bottom-style: solid;
     border-right-style: hidden;
@@ -412,67 +413,42 @@ body {
     color: #303030;
 }
 
+.contact-section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background: rgb(248,248,248);
+    background: linear-gradient(180deg, rgba(248,248,248,0.7203256302521008) 57%, rgba(176,176,176,0.4) 100%);}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Temporary */
-
-.under-construction-section{
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  display: block;
-  position: relative;
-  margin: auto;
-  border-width: thick;
-  border-top-style: dashed;
-  border-bottom-style: solid;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-color: rgb(48, 48, 48);
-  background: rgb(248,248,248);
-  color: rgb(48, 48, 48);
+.contact-content{
+    display: flex;
+    justify-content: center;
 }
 
-.title-under-construction{
-  width: 50%;
-  border-bottom-style: none;
+.my-picture-div{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
-.under-construction-content-description{
-  color: rgb(48, 48, 48);
+.my-picture-image{
+    display: block;
+    height: 200px;
+    width: 200px;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    margin: auto;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgba(48,48,48,0.5);
 }
 
-.icon-div{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: block;
+.links{
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
 }
 
-.icon{
-  width: 100%;
-  text-align: center;
-  font-size: 48px;
-}
-
-.under-construction-links{
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.mail, .linkedin{
+    margin: auto;
 }
 
 .mail, .github, .linkedin{
@@ -489,6 +465,18 @@ body {
   text-decoration: none;
   color: #303030;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
   padding-top: 20px;
@@ -608,6 +596,9 @@ footer{
       top: 138vh;
     }
 
+    .projects-content-sub-description{
+        padding-bottom: 5vh;
+    }
 
     .big-projects{
         grid-template-columns: auto;
@@ -637,10 +628,16 @@ footer{
 
     .coming-soon{
         background-color: rgba(248,248,248,0.4);
-        height: 240px;
+        height: 204px;
     }
 
+    .contact-content{
+        flex-direction: column;
+   }
 
+   .links{
+       padding-left: 0;
+   }
 
 
 }
