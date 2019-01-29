@@ -14,7 +14,9 @@ $(window).scroll(function() {
                        "justify-content": "space-between",
                        "position": "fixed",
                        "right": "0",
-                       "top": "20vh"
+                       "top": "20vh",
+                       "width": "auto"
+
                    });
                    $(".menu-about-div").css({
                        "padding-top": "5vh",
@@ -49,6 +51,12 @@ $(window).scroll(function() {
                        "padding-left": "32px",
                        "padding-right": "32px"
                    });
+                   $(".back-to-top-link").css({
+                       "opacity": "1",
+                       "visibility": "visible"
+                   });
+
+
 
                }
 
@@ -66,7 +74,7 @@ $(window).scroll(function() {
                        "justify-content": "center",
                        "position": "absolute",
                        "top": "55vh",
-                       "right": "23%"
+                       "width": "100%"
                    });
                    $(".menu-about-div").css({
                        "padding-top": "0",
@@ -109,6 +117,11 @@ $(window).scroll(function() {
                        "padding-left": "2vw",
                        "padding-right": "2vw"
                    });
+                   $(".back-to-top-link").css({
+                       "opacity": "0",
+                       "visibility": "hidden"
+                   });
+
 
                }
            }
@@ -116,9 +129,16 @@ $(window).scroll(function() {
        lastScrollTop = wS;
 });
 
-$(document).ready(function bounce(){
-    var div = $(".arrow");
-    div.animate({top: '+=20px'}, "slow");
-    div.animate({top: '-=20px'}, "slow");
-    bounce();
+$(document).ready(function bounce1(){
+    var div1 = $(".arrow-down");
+    div1.animate({top: '+=20px'}, "slow");
+    div1.animate({top: '-=20px'}, "slow");
+    bounce1();
+});
+
+$(document).ready(function bounce2(){
+    var div2 = $(".back-to-top-link");
+    div2.animate({top: '+=20px'}, "slow");
+    div2.animate({top: '-=20px'}, "slow");
+    bounce2();
 });

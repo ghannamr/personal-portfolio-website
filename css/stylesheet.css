@@ -17,11 +17,35 @@ body {
   margin: 0;
 }
 
-.arrow{
+.arrow-down{
     position: absolute;
     top: 85vh;
     left: 50%;
-    color: rgba(48, 48, 48);
+    color: rgb(48, 48, 48);
+    font-size: 48px;
+}
+
+.back-to-top-link{
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: rgb(48, 48, 48, 0.5);
+    font-size: 2vh;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.arrow-up{
     font-size: 48px;
 }
 
@@ -67,7 +91,7 @@ body {
 .menu{
   position: absolute;
   top: 55vh;
-  right: 23%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -85,7 +109,7 @@ body {
 }
 
 .menu-about, .menu-timeline, .menu-projects, .menu-contact{
-  background-color: rgb(248,248,248,0.8);
+  background-color: rgba(248,248,248,0.8);
   border-width: thin;
   border-style: solid;
   border-color: rgba(48, 48, 48, 0.5);
@@ -96,19 +120,19 @@ body {
   border-radius: 5px;
 }
 
-.menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link{
+.menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link, .back-to-top-link:link{
   text-decoration: none;
   color: #303030;
   background-color: rgba(248,248,248,0.8);
 }
 
-.menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited{
+.menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited, .back-to-top-link:visited{
   text-decoration: none;
   color: #303030;
   background-color: rgba(248,248,248,0.8);
 }
 
-.menu-about:hover, .menu-timeline:hover, .menu-projects:hover, .menu-contact:hover{
+.menu-about:hover, .menu-timeline:hover, .menu-projects:hover, .menu-contact:hover, .back-to-top-link:hover{
   color: #F8F8F8;
   background-color: rgb(48,48,48);
 }
