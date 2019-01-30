@@ -17,10 +17,14 @@ body {
   margin: 0;
 }
 
-.arrow-down{
+.arrow-down-div{
     position: absolute;
     top: 85vh;
-    left: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.arrow-down{
     color: rgb(48, 48, 48);
     font-size: 48px;
 }
@@ -37,7 +41,7 @@ body {
     border-style: solid;
     border-width: thin;
     border-radius: 5px;
-    border-color: rgb(48, 48, 48, 0.5);
+    border-color: rgba(48, 48, 48, 0.5);
     font-size: 2vh;
     letter-spacing: 1px;
     font-weight: bold;
@@ -45,8 +49,32 @@ body {
     visibility: hidden;
 }
 
+.back-to-top-mobile-link{
+    z-index: 4;
+    visibility: hidden;
+}
+
+.arrow-up-mobile-div{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 4;
+}
+
+.arrow-up-mobile{
+    font-size: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(48, 48, 48, 0.5);
+    background-color: rgba(248,248,248,0.8);
+}
+
 .arrow-up{
-    font-size: 48px;
+    font-size: 36px;
 }
 
 .intro{
@@ -120,13 +148,13 @@ body {
   border-radius: 5px;
 }
 
-.menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link, .back-to-top-link:link{
+.menu-about:link, .menu-timeline:link, .menu-projects:link, .menu-contact:link, .back-to-top-link:link, .back-to-top-mobile-link:link{
   text-decoration: none;
   color: #303030;
   background-color: rgba(248,248,248,0.8);
 }
 
-.menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited, .back-to-top-link:visited{
+.menu-about:visited, .menu-timeline:visited, .menu-projects:visited, .menu-contact:visited, .back-to-top-link:visited, .back-to-top-mobile-link:visited{
   text-decoration: none;
   color: #303030;
   background-color: rgba(248,248,248,0.8);

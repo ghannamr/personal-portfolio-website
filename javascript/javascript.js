@@ -59,6 +59,11 @@ $(window).scroll(function() {
 
 
                }
+               else{
+                   $(".back-to-top-mobile-link").css({
+                       "visibility": "visible"
+                   });
+               }
 
                //animate the arrow icon for all sizes
                /*var div = $(".arrow");
@@ -124,13 +129,19 @@ $(window).scroll(function() {
 
 
                }
+               else{
+                   $(".back-to-top-mobile-link").css({
+                       "visibility": "hidden"
+                   });
+               }
+
            }
 
        lastScrollTop = wS;
 });
 
 $(document).ready(function bounce1(){
-    var div1 = $(".arrow-down");
+    var div1 = $(".arrow-down-div");
     div1.animate({top: '+=20px'}, "slow");
     div1.animate({top: '-=20px'}, "slow");
     bounce1();
